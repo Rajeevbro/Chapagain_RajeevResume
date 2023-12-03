@@ -3,7 +3,16 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box height={"100%"} overflow={"scroll"}>
+    <Box
+      height={"100%"}
+      sx={{
+        overflow: "scroll",
+        scrollbarWidth: "none",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      }}
+    >
       <Paper
         sx={{
           backgroundColor: "#051626",
