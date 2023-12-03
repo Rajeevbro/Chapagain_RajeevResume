@@ -8,11 +8,17 @@ import { Typography } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{ height: "100%", maxHeight: "100vh", overflow: "hidden" }}>
-      <Grid container spacing={0} height={"100%"}>
+    <Box sx={{ height: "100%", maxHeight: "100vh", overflow: "scroll" }}>
+      <Grid
+        container
+        // direction={{ xs: "column", md: "row", sm: "row" }}
+        height={"100%"}
+      >
         <Grid
           item
-          xs={6}
+          xs={12}
+          sm={6}
+          md={6}
           sx={{ maxHeight: "100vh" }}
           margin={0}
           padding={"10%"}
@@ -23,7 +29,9 @@ const Home = () => {
         </Grid>
         <Grid
           item
-          xs={6}
+          xs={12}
+          sm={6}
+          md={6}
           margin={0}
           padding={"7%"}
           marginTop={"6%"}

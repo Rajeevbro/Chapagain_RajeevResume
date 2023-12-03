@@ -23,9 +23,11 @@ const Navbar = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <Typography variant="h3">{resumeData.name.toUpperCase()}</Typography>
-        <Typography variant="h5">{resumeData.title}</Typography>
-        <Box sx={{ marginTop: "2%", fontSize: "20px" }}>
+        <Typography variant="h4">{resumeData.name.toUpperCase()}</Typography>
+        <Typography variant="h5" marginTop={"15%"}>
+          {resumeData.title}
+        </Typography>
+        <Box sx={{ marginTop: "2%", fontSize: "20px", marginTop: "7%" }}>
           <p>{resumeData.description}</p>
         </Box>
       </Box>
