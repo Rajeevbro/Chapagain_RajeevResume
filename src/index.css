@@ -1,0 +1,30 @@
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: linear-gradient(to bottom, #000b15, #001a35);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #bbc0c3;
+}
+
+.navButton {
+  color: #f4f4f4;
+}
+.navButton:hover {
+  font-size: "20px";
+}
+.image-container {
+  background-color: #ff0000; /* Set your desired background color */
+  padding: 20px; /* Optional: Add padding to the container */
+  display: inline-block; /* Optional: Display as inline-block to fit content */
+}
