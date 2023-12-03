@@ -13,6 +13,14 @@ export const StyledButton = styled(Button)(() => ({
   },
 }));
 
+export const StyledBox = styled(Box)(() => ({
+  overflow: "scroll",
+  scrollbarWidth: "none",
+  "&::-webkit-scrollbar": {
+    display: "none",
+  },
+}));
+
 const Navbar = () => {
   const navigate = useNavigate();
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { skillSet } from "../ResumeData/resumeData";
 import { Typography, Box, Stack, Card, Paper, Divider } from "@mui/material";
+import { StyledBox } from "./Navbar";
 
 const Skills = () => {
   return (
@@ -19,23 +20,18 @@ const Skills = () => {
             <Divider />
             <Typography variant="h6">{id.toUpperCase()}</Typography>
 
-            <Box
+            <StyledBox
               maxHeight={"100%"}
               maxWidth={"70%"}
               sx={{
                 backgroundColor: "#03192d",
-                overflow: "scroll",
-                scrollbarWidth: "none",
-                "&::-webkit-scrollbar": {
-                  display: "none", // For WebKit (Chrome, Safari)
-                },
               }}
             >
               {skillSet.map((text) => {
                 console.log(text);
                 return <Typography>{text}</Typography>;
               })}
-            </Box>
+            </StyledBox>
           </Box>
         );
       })}

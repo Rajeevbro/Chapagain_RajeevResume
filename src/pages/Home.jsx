@@ -5,10 +5,16 @@ import Grid from "@mui/material/Grid";
 import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
 import { Typography } from "@mui/material";
+import { StyledBox } from "./Navbar";
 
 const Home = () => {
   return (
-    <Box sx={{ height: "100%", maxHeight: "100vh", overflow: "scroll" }}>
+    <StyledBox
+      sx={{
+        height: "100%",
+        maxHeight: "100vh",
+      }}
+    >
       <Grid
         container
         // direction={{ xs: "column", md: "row", sm: "row" }}
@@ -47,7 +53,7 @@ const Home = () => {
           <Outlet />
         </Grid>
       </Grid>
-    </Box>
+    </StyledBox>
   );
 };
 
