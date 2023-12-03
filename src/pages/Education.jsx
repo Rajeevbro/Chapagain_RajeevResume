@@ -9,7 +9,7 @@ const Education = () => {
   };
   return (
     <Button onClick={handleClick}>
-      <Card margin="55%" sx={{ padding: "0 20px" }}>
+      <Card sx={{ padding: "0 20px" }}>
         <CardContent>
           <img
             src="https://logowik.com/content/uploads/images/northwest-missouri-state-university8644.logowik.com.webp"

@@ -8,7 +8,7 @@ import { Typography } from "@mui/material";
 
 const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1, height: "100%", display: "block" }}>
+    <Box sx={{ height: "100%", maxHeight: "100vh", overflow: "hidden" }}>
       <Grid container spacing={0} height={"100%"}>
         <Grid
           item
@@ -25,10 +25,16 @@ const Home = () => {
           item
           xs={6}
           margin={0}
-          padding={"3%"}
+          padding={"7%"}
           marginTop={"6%"}
-          overflow={"scroll"}
           maxHeight={"90%"}
+          sx={{
+            overflow: "scroll",
+            scrollbarWidth: "none",
+            "&::-webkit-scrollbar": {
+              display: "none",
+            },
+          }}
         >
           <Outlet />
         </Grid>

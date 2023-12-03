@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box>
+    <Box height={"100vh"} overflow={"hidden"}>
       <Paper
         sx={{
           backgroundColor: "#051626",
