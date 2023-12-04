@@ -36,7 +36,9 @@ const Skills = () => {
           </Box>
         );
       })}
-      <DownloadResume />
+      <Box display={{ xs: "block", sm: "none", md: "none" }}>
+        <DownloadResume />
+      </Box>
     </Box>
   );
 };
