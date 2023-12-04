@@ -2,6 +2,7 @@ import React from "react";
 import { skillSet } from "../ResumeData/resumeData";
 import { Typography, Box, Stack, Card, Paper, Divider } from "@mui/material";
 import { StyledBox } from "./Navbar";
+import DownloadResume from "../components/DownloadResume";
 
 const Skills = () => {
   return (
@@ -35,6 +36,7 @@ const Skills = () => {
           </Box>
         );
       })}
+      <DownloadResume />
     </Box>
   );
 };

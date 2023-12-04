@@ -6,24 +6,20 @@ import {
   SpeedDialIcon,
 } from "@mui/material";
 import React from "react";
-import FileCopyIcon from "@mui/icons-material/FileCopyOutlined";
-import SaveIcon from "@mui/icons-material/Save";
-import PrintIcon from "@mui/icons-material/Print";
-import ShareIcon from "@mui/icons-material/Share";
-import { Outlet, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import SchoolIcon from "@mui/icons-material/School";
 import InfoIcon from "@mui/icons-material/Info";
 import PermDataSettingIcon from "@mui/icons-material/PermDataSetting";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import DownloadIcon from "@mui/icons-material/Download";
-import DownloadResume from "./DownloadResume";
+
+import resume from "../assets/RajeevResume.pdf";
 
 const actions = [
   { icon: <LibraryBooksIcon />, name: "Projects", path: "projects" },
   { icon: <PermDataSettingIcon />, name: "Skills", path: "skills" },
   { icon: <SchoolIcon />, name: "Education", path: "education" },
   { icon: <InfoIcon />, name: "About", path: "about" },
-  { icon: <DownloadIcon />, name: "Download Resume", path: "download" },
 ];
 
 const SlideBar = () => {
@@ -31,6 +27,10 @@ const SlideBar = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const navigate = useNavigate();
+  const handleDownload = () => {
+    console.log("I am clicked");
+    <a href={resume} download={"resume"}></a>;
+  };
 
   return (
     <Box
@@ -57,11 +57,7 @@ const SlideBar = () => {
             tooltipOpen
             onClick={() => {
               setOpen(false);
-              action.path == "download" ? (
-                <DownloadResume />
-              ) : (
-                navigate(action.path)
-              );
+              navigate(action.path);
             }}
           />
         ))}
