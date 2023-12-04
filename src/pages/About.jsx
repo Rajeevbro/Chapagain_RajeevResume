@@ -5,13 +5,13 @@ const About = () => {
   return (
     <Box
       height={"100%"}
-      sx={{
-        overflow: "scroll",
-        scrollbarWidth: "none",
-        "&::-webkit-scrollbar": {
-          display: "none",
-        },
-      }}
+      // sx={{
+      //   overflow: "scroll",
+      //   scrollbarWidth: "none",
+      //   "&::-webkit-scrollbar": {
+      //     display: "none",
+      //   },
+      // }}
     >
       <Paper
         sx={{

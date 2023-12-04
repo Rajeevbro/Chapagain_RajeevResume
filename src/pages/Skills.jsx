@@ -6,14 +6,14 @@ import DownloadResume from "../components/DownloadResume";
 
 const Skills = () => {
   return (
-    <Box height="100%">
+    <Box height="100%" width={"100%"}>
       {skillSet.map(({ id, skillSet }) => {
         return (
           <Box
             padding={"5%"}
             sx={{
               height: "70%",
-              width: "80%",
+              width: "100%",
               backgroundColor: "#03192d",
               overflow: "hidden",
             }}

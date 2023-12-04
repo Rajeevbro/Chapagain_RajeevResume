@@ -24,7 +24,7 @@ const Project = () => {
             sx={{
               backgroundColor: "#001a35",
               minWidth: "25%",
-              maxHeight: "150%",
+              maxHeight: "250%",
               marginTop: "3.3rem",
               borderRadius: "20px",
             }}
