@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import { Outlet } from "react-router-dom";
 import { Typography } from "@mui/material";
 import { StyledBox } from "./Navbar";
+import SlideBar from "../components/SlideBar";
 
 const Home = () => {
   return (
@@ -13,15 +14,24 @@ const Home = () => {
       sx={{
         height: "100%",
         maxHeight: "100vh",
+        zIndex: 1,
       }}
     >
+      <Box
+        sx={{ zIndex: 12, position: "fixed", bottom: "17px", left: "70%" }}
+        display={{ xs: "block", sm: "none", md: "none" }}
+      >
+        <SlideBar />
+      </Box>
       <Grid
         container
         // direction={{ xs: "column", md: "row", sm: "row" }}
         height={"100%"}
+        sx={{ zIndex: 1 }}
       >
         <Grid
           item
+          display={{ xs: "none", sm: "block", md: "block" }}
           xs={12}
           sm={6}
           md={6}

@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import resume from "../assets/RajeevResume.pdf";
+import DownloadResume from "../components/DownloadResume";
 
 export const StyledButton = styled(Button)(() => ({
   color: "#f4f4f4",
@@ -88,13 +89,7 @@ const Navbar = () => {
           </a>
         </Stack>
       </Box>
-      <Box>
-        <StyledButton>
-          <a href={resume} download={"resume"}>
-            <StyledButton>Download Resume</StyledButton>
-          </a>
-        </StyledButton>
-      </Box>
+      <DownloadResume />
     </Stack>
   );
 };

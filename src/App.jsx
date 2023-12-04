@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Project from "./pages/Project";
 import Skills from "./pages/Skills";
 import Education from "./pages/Education";
+import SlideBar from "./components/SlideBar";
 
 function App() {
   return (
